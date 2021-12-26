@@ -26,4 +26,15 @@ function linkAction(){
  
 navLink.forEach((e)=>{  
     e.addEventListener("click", linkAction);   
-})
+}) 
+ 
+// Change Background   
+function scrollHeader(){ 
+    // ========Change background Header 
+    const header = document.getElementById("header"); 
+    if(this.scrollY >= 100) header.classList.add("scroll-header"); 
+    else header.classList.remove("scroll-header");  
+    console.log(this.scrollY)
+    
+}
+window.addEventListener("scroll",scrollHeader); 
