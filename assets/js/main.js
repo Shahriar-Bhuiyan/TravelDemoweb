@@ -46,14 +46,15 @@ var swiper = new Swiper(".discover_container", {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-    pagination: {
-      el: ".swiper-pagination",
+    
+      effect:"coverflow", 
+      grabCursor:true,
+      centeredSlides:true,
+      slidesPerView:"auto",
+      loop:true, 
+      spaceBetween:32,
+      coverflowEffect:{ 
+      rotate:0,
+      
     },
   });
