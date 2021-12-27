@@ -76,3 +76,55 @@ Terms & Agreements
 Privacy Policy
 
 
+ <div class="footer_rights">
+                    <p class="footer_copy">&#169; 2021 Bedimcode. All rigths reserved.</p>
+                    <div class="footer_terms">
+                        <a href="" class="footer_terms-link">Terms & Agreements</a>
+                        <a href="" class="footer_terms-link">Privacy Policy</a>
+                    </div>
+                </div>
+
+                 <div class="footer_data">
+                    <div class="footer_subtitle">About</div>
+                    <ul>
+                        <li class="footer_item">
+                            <a href="" class="footer_llink">About Us</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="" class="footer_llink">Features</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="" class="footer_llink">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_data">
+                    <div class="footer_subtitle">Company</div>
+                    <ul>
+                        <li class="footer_item">
+                            <a href="" class="footer_llink">Team</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="" class="footer_llink">Plan Y pricing</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="" class="footer_llink">Become Member</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_data">
+                    <div class="footer_subtitle">Support</div>
+                    <ul>
+                        <li class="footer_item">
+                            <a href="" class="footer_llink">FAQs</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="" class="footer_llink">Support Center</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="" class="footer_llink">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>

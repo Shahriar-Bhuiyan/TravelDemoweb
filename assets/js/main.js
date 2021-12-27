@@ -58,3 +58,31 @@ var swiper = new Swiper(".discover_container", {
       
     },
   });
+
+//   video 
+
+const videoFile = document.getElementById("video-file"),
+      videoButton = document.getElementById('video-button'),
+      videoIcon = document.getElementById('video-icon');
+
+      function playpause(){ 
+          if(videoFile.paused){
+              videoFile.play();
+
+              videoIcon.classList.add('ri-pause-line'),
+              videoIcon.classList.remove('ri-play-line')
+          }else{
+              videoFile.pause();
+
+              videoIcon.classList.add('ri-play-line'),
+              videoIcon.classList.remove('ri-pause-line')
+          }
+      }
+videoButton.addEventListener("click",playpause);
+
+function finalVideo(){
+    videoIcon.classList.add('ri-play-line'),
+    videoIcon.classList.remove('ri-pause-line')
+}
+
+videoFile.addEventListener("ended", finalVideo)
