@@ -358,4 +358,21 @@ input{
 } 
 .discover_title , .discover_description{ 
   color: var(--white-color);
+} 
+.discover_title{ 
+  font-size: var(--h3-font-size); 
+  margin-bottom: var(--mb-0-25);
+}
+
+.discover_description{ 
+  display: block;
+  font-size: var(--smaller-font-size);
+}
+
+.discover_img{ 
+  transition: var(--img-transition);
+}
+
+.discover_img:hover{ 
+  transform: var(--img-scale);
 }
