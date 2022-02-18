@@ -34,7 +34,6 @@ function scrollHeader(){
     const header = document.getElementById("header"); 
     if(this.scrollY >= 100) header.classList.add("scroll-header"); 
     else header.classList.remove("scroll-header");  
-    console.log(this.scrollY)
     
 }
 window.addEventListener("scroll",scrollHeader);
@@ -85,4 +84,60 @@ function finalVideo(){
     videoIcon.classList.remove('ri-pause-line')
 }
 
-videoFile.addEventListener("ended", finalVideo)
+videoFile.addEventListener("ended", finalVideo);
+
+function scrollTop(){
+    const scrollTop = document.getElementById("scroll-up");
+    if(this.scrollY >= 200) scrollTop.classList.add('show');else scrollTop.classList.remove('show')
+}
+
+window.addEventListener("scroll",scrollTop);
+
+const sections = document.querySelectorAll('section[id]');
+
+function scrollActive(){
+    const scrollY = window.pageYOffset;
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+       let sectionId = current.getAttribute('id');
+
+       if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+           document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add("active-link");
+          
+       }else{
+        document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove("active-link");
+        
+       }   
+        
+    })
+}
+
+window.addEventListener('scroll',scrollActive)
+
+// Dark Mode 
+
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'ri-sun-line'
+
+const selectedTheme = localStorage.getItem("selectedTheme");
+const selectedIcons = localStorage.getItem("selectedIcons");
+
+const getCurrentTheme =()=> document.body.classList.contains(darkTheme) ? "dark" : "light";
+const getCurrentIcon = ()=> themeButton.classList.contains(iconTheme) ? "ri-moon-line" : "ri-sun-line";
+
+if(selectedTheme){
+   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](darkTheme);
+   themeButton.classList[selectedIcons === "ri-moon-line" ? "add" : "remove"];
+}
+
+themeButton.addEventListener("click",()=>{
+    document.body.classList.toggle(darkTheme);
+    themeButton.classList.toggle(iconTheme);
+
+    localStorage.setItem("selectedTheme",getCurrentTheme());
+    localStorage.setItem("selectedIcons",getCurrentIcons());
+})
+

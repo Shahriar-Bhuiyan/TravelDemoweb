@@ -7,6 +7,7 @@
     <title>Document</title>  
 
     <!--fav icon  --> 
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
     <!-- Remix Icon --> 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- swiper Icon -->  
@@ -22,7 +23,7 @@
             <div class="nav_menu" id="nav-menu"> 
                 <ul class="nav_list"> 
                     <li class="nav_item"> 
-                        <a href="#home" class="nav_link">Home</a>
+                        <a href="#home" class="nav_link active-link">Home</a>
                     </li> 
                     <li class="nav_item"> 
                         <a href="#about" class="nav_link">About</a>
@@ -34,6 +35,10 @@
                         <a href="#place" class="nav_link">Place</a>
                     </li>
                 </ul> 
+                <div class="nav_dark">
+                    <span class="change-theme-name">Dark Mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
                 <i class="ri-close-line nav_close" id="nav-close"></i>
             </div> 
             <div class="nav_toggle" id="nav-toggle"><i class="ri-function-line"></i></div>
@@ -342,87 +347,90 @@
                 
             </div>
         </section>
-        <footer class="footer section">
-            <div class="footer_container container grid">
-               <div class="footer_content grid">
-                <div class="footer_data">
-                    <h3 class="footer_title">Travel</h3>
-                    <p class="footer_description">Travel you choose the <br> destination, we offer you the <br> experience.</p>
-                    <div>
-                        <a href="https://www.facebook.com/" target="_blank" class="footer_social">
-                            <i class="ri-facebook-box-fill"></i>
-                        </a>
-
-                        <a href="https://twitter.com/" target="_blank" class="footer_social">
-                            <i class="ri-twitter-fill"></i>
-                        </a>
-
-                        <a href="https://www.instagram.com/" target="_blank" class="footer_social">
-                            <i class="ri-instagram-fill"></i>
-                        </a>
-
-                        <a href="https://www.youtube.com/" target="_blank" class="footer_social">
-                            <i class="ri-youtube-fill"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="footer_data">
-                    <h3 class="footer_subtitle">About</h3>
-                    <ul>
-                        <li class="footer_item">
-                            <a href="" class="footer_llink">About Us</a>
-                        </li>
-                        <li class="footer_item">
-                            <a href="" class="footer_llink">Features</a>
-                        </li>
-                        <li class="footer_item">
-                            <a href="" class="footer_llink">Blogs</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer_data">
-                    <h3 class="footer_subtitle">Company</h3>
-                    <ul>
-                        <li class="footer_item">
-                            <a href="" class="footer_llink">Team</a>
-                        </li>
-                        <li class="footer_item">
-                            <a href="" class="footer_llink">Plan Y pricing</a>
-                        </li>
-                        <li class="footer_item">
-                            <a href="" class="footer_llink">Become Member</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer_data">
-                    <h3 class="footer_subtitle">Support</h3>
-                    <ul>
-                        <li class="footer_item">
-                            <a href="" class="footer_llink">FAQs</a>
-                        </li>
-                        <li class="footer_item">
-                            <a href="" class="footer_llink">Support Center</a>
-                        </li>
-                        <li class="footer_item">
-                            <a href="" class="footer_llink">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-               </div>
-               <div class="footer_rights">
-                <p class="footer_copy">&#169; 2021 Bedimcode. All rigths reserved.</p>
-                <div class="footer_terms">
-                    <a href="" class="footer_terms-link">Terms & Agreements</a>
-                    <a href="" class="footer_terms-link">Privacy Policy</a>
-                </div>
-            </div>
-            </div>
-        </footer>
-
     </main> 
+    <footer class="footer section">
+        <div class="footer_container container grid">
+           <div class="footer_content grid">
+            <div class="footer_data">
+                <h3 class="footer_title">Travel</h3>
+                <p class="footer_description">Travel you choose the <br> destination, we offer you the <br> experience.</p>
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank" class="footer_social">
+                        <i class="ri-facebook-box-fill"></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer_social">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer_social">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/" target="_blank" class="footer_social">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer_data">
+                <h3 class="footer_subtitle">About</h3>
+                <ul>
+                    <li class="footer_item">
+                        <a href="" class="footer_llink">About Us</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="" class="footer_llink">Features</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="" class="footer_llink">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer_data">
+                <h3 class="footer_subtitle">Company</h3>
+                <ul>
+                    <li class="footer_item">
+                        <a href="" class="footer_llink">Team</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="" class="footer_llink">Plan Y pricing</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="" class="footer_llink">Become Member</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer_data">
+                <h3 class="footer_subtitle">Support</h3>
+                <ul>
+                    <li class="footer_item">
+                        <a href="" class="footer_llink">FAQs</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="" class="footer_llink">Support Center</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="" class="footer_llink">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+           </div>
+           <div class="footer_rights">
+            <p class="footer_copy">&#169; 2021 Bedimcode. All rigths reserved.</p>
+            <div class="footer_terms">
+                <a href="" class="footer_terms-link">Terms & Agreements</a>
+                <a href="" class="footer_terms-link">Privacy Policy</a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollUp" id="scroll-up">
+        <i class="ri-arrow-up-line scrollUp-icon"></i>
+    </a>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
